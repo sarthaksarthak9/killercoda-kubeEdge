@@ -1,6 +1,8 @@
 # Setup edgecore(on Edge Node)
 
-### Now, cri-dockerd setup
+In Kubernetes 1.23 and earlier, you could use Docker Engine with Kubernetes, relying on a built-in component of Kubernetes named dockershim. The dockershim component was removed in the Kubernetes 1.24 release; however, a third-party replacement, cri-dockerd, is available. The cri-dockerd adapter lets you use Docker Engine through the Container Runtime Interface.
+
+### Setup cri-dockerd 
 
 ``` 
 wget https://github.com/Mirantis/cri-dockerd/releases/download/v0.3.4/cri-dockerd-0.3.4.amd64.tgz
@@ -8,8 +10,8 @@ tar -xvf cri-dockerd-0.3.4.amd64.tgz
 cd cri-dockerd/
 mkdir -p /usr/local/bin
 install -o root -g root -m 0755 ./cri-dockerd /usr/local/bin/cri-dockerd
-```
-{{execute}}
+
+```{{execute}}
 
 ### Add the files cri-docker.socker cri-docker.service
 
@@ -54,9 +56,7 @@ WantedBy=sockets.target
 EOF
 
 
-```
-
-{{execute}}
+```{{execute}}
 
 ### Daemon reload
 
@@ -66,9 +66,7 @@ systemctl enable cri-docker.service
 systemctl enable --now cri-docker.socket
 systemctl start cri-docker.service
 
-```
-
-{{execute}}
+```{{execute}}
 
 
 
