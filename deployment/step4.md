@@ -10,7 +10,7 @@ sudo keadm deprecated init --advertise-address="CloudCore-IP" --kubeedge-version
 ## check if cloudcore running successfully:
 
 ```
-sudo kubectl get all -nkubeedge
+ps -elf | grep cloudcore
 
 ```
 {{execute}}
