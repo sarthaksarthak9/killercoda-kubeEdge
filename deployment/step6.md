@@ -7,6 +7,5 @@ mkdir -p /opt/cni/bin
 
 tar Cxzvf /opt/cni/bin cni-plugins-linux-amd64-v1.3.0.tgz
 
-```
-{{execute}}
+```{{execute}}
 
