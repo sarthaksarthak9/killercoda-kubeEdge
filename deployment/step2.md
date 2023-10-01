@@ -2,4 +2,7 @@
 <br>
 Run the command below to one-click create a cluster using kind. 
 <br>
-`kind create cluster --name my-cluster`{{execute}}
+```
+kind create cluster --name my-cluster
+
+```{{execute}}
