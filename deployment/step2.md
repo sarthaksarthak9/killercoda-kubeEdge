@@ -3,6 +3,6 @@
 Run the command below to one-click create a cluster using kind. 
 <br>
 ```
-kind create cluster --name my-cluster
+sudo kind create cluster
 
 ```{{execute}}
