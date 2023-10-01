@@ -1,9 +1,19 @@
-# Check deloyment    
-<br>
-Check the state of nodes:
+### Install Kubectl
 
-`kubectl get node`{{execute}}  
+```
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+```
+{{execute}}
 
-There are two nodes, one assumes the master role and the other assumes the edge role, indicating that the edge side has been managed and controlled by the cloud side as a node.       
+### Setup keadm
 
-**Congratulations！KubeEdge has been deployed！**
+```
+wget https://github.com/kubeedge/kubeedge/releases/download/v1.14.2/keadm-v1.14.2-linux-amd64.tar.gz
+
+tar -zxvf keadm-v1.14.2-linux-amd64.tar.gz
+
+cp keadm-v1.14.2-linux-amd64/keadm/keadm /usr/local/bin/
+
+```
+{{execute}}
+
