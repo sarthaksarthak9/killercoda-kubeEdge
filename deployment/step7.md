@@ -1,10 +1,3 @@
-### Install Kubectl
-
-```
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-```
-{{execute}}
-
 ### Setup keadm
 
 ```
@@ -14,6 +7,5 @@ tar -zxvf keadm-v1.14.2-linux-amd64.tar.gz
 
 cp keadm-v1.14.2-linux-amd64/keadm/keadm /usr/local/bin/
 
-```
-{{execute}}
+```{{execute}}
 
