@@ -15,5 +15,4 @@ ps -elf | grep cloudcore
 
 ```{{execute}}
 
-
 **Now you can see KubeEdge cloudcore is running.**
