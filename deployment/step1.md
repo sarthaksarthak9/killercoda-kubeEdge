@@ -4,7 +4,7 @@ Kind is a tool for running local Kubernetes clusters using Docker container “n
 
 Run the command below to intsall kind:
 ```
-curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.11.1/kind-linux-amd64  
+curl -Lo ./kind "https://github.com/kubernetes-sigs/kind/releases/download/v0.14.0/kind-$(uname)-amd64"  
 chmod +x ./kind  
 mv ./kind /usr/local/bin/kind
 ```{{execute}}  
